@@ -1,3 +1,16 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track} from 'lwc';
 
-export default class TestLWC extends LightningElement {}
+export default class App extends LightningElement {
+   name = 'Electra X4';
+   description = 'A sweet bike built for comfort.';
+   category = 'Mountain';
+   material = 'Steel';
+   price = '$2,700';
+   pictureUrl = 'https://s3-us-west-1.amazonaws.com/sfdc-demo/ebikes/electrax4.jpg';
+
+   @track
+   ready = false;
+   connectedCallback() {
+
+   }
+}
