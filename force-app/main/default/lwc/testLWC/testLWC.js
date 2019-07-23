@@ -1,4 +1,4 @@
-import { LightningElement, track} from 'lwc';
+import {LightningElement, track} from 'lwc';
 
 export default class App extends LightningElement {
    name = 'Electra X4';
@@ -11,6 +11,6 @@ export default class App extends LightningElement {
    @track
    ready = false;
    connectedCallback() {
-
+      
    }
 }
